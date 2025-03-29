@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Community Radio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-800 py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-broadcast-tower text-white text-xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold">Contact Us</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="news.html" class="hover:text-blue-400 transition">News</a>
+                <a href="about.html" class="hover:text-blue-400 transition">About</a>
+                <a href="#" class="text-blue-400 transition">Contact</a>
+            </nav>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4">
+        <!-- Hero Section -->
+        <section class="mb-12">
+            <div class="bg-gradient-to-r from-blue-900 to-gray-800 rounded-xl p-8 text-center">
+                <h2 class="text-4xl font-bold mb-4">Get In Touch</h2>
+                <p class="text-xl">We'd love to hear from you</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="mb-12">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Contact Form -->
+                <div class="bg-gray-800 rounded-xl p-6">
+                    <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                    <form>
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        </div>
+                        <div class="mb-4">
+                            <label for="subject" class="block text-sm font-medium mb-2">Subject</label>
+                            <select id="subject" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <option>General Inquiry</option>
+                                <option>News Tip</option>
+                                <option>Advertising</option>
+                                <option>Technical Support</option>
+                                <option>Programming</option>
+                            </select>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full bg-gray-700 border border-gray-600 rounded-lg py-2 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-4 rounded-lg transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                    <div class="space-y-6">
+                        <!-- Address -->
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Visit Us</h4>
+                                <p class="text-gray-400">123 Broadcast Avenue<br>Your Town, ST 12345</p>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-phone-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Call Us</h4>
+                                <p class="text-gray-400">
+                                    Main: (555) 123-4567<br>
+                                    Studio: (555) 123-4568<br>
+                                    Newsroom: (555) 123-4569
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Email Us</h4>
+                                <p class="text-gray-400">
+                                    General: info@communityradio.com<br>
+                                    News: news@communityradio.com<br>
+                                    Advertising: sales@communityradio.com
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Hours -->
+                        <div class="flex items-start">
+                            <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center mr-4 mt-1">
+                                <i class="fas fa-clock text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold mb-1">Business Hours</h4>
+                                <p class="text-gray-400">
+                                    Monday-Friday: 8:00 AM - 6:00 PM<br>
+                                    Saturday: 9:00 AM - 2:00 PM<br>
+                                    Sunday: Closed
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Media -->
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-12 h-12 bg-gray-700 hover:bg-blue-600 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-700 hover:bg-blue-400 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-700 hover:bg-pink-600 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 bg-gray-700 hover:bg-red-600 rounded-full flex items-center justify-center transition">
+                                <i class="fab fa-youtube text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map -->
+        <section class="mb-12">
+            <h3 class="text-2xl font-bold mb-6">Find Us</h3>
+            <div class="bg-gray-800 rounded-xl p-6 h-64 flex items-center justify-center">
+                <div class="text-center">
+                    <i class="fas fa-map-marked-alt text-5xl text-gray-500 mb-4"></i>
+                    <p class="text-gray-400">Interactive map would be displayed here</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 px-6 mt-12">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-broadcast-tower text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">Community Radio</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">98.5 FM • Serving the community since 1985</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Community Radio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Player -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 p-3 shadow-lg">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <button class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div>
+                    <h4 class="font-semibold">Community Radio 98.5 FM</h4>
+                    <p class="text-sm text-gray-400">Now Playing: Local Hits</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="w-48 hidden md:block">
+                    <input type="range" min="0" max="100" value="70" class="w-full">
+                </div>
+                <div class="text-gray-400">
+                    <span class="text-sm">12:45</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/radio-player.js"></script>
+</body>
+</html>
