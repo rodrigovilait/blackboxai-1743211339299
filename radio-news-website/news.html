@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community News | Community Radio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+        h1, h2, h3 {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100">
+    <!-- Header -->
+    <header class="bg-gray-800 py-4 px-6 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center">
+                    <i class="fas fa-broadcast-tower text-white text-xl"></i>
+                </div>
+                <h1 class="text-2xl font-bold">Community News</h1>
+            </div>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html" class="hover:text-blue-400 transition">Home</a>
+                <a href="#" class="text-blue-400 transition">News</a>
+                <a href="about.html" class="hover:text-blue-400 transition">About</a>
+                <a href="contact.html" class="hover:text-blue-400 transition">Contact</a>
+            </nav>
+            <button class="md:hidden text-xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4">
+        <!-- News Categories -->
+        <div class="mb-8 flex flex-wrap gap-2">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-semibold">All</button>
+            <button class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-full text-sm font-semibold transition">Local Events</button>
+            <button class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-full text-sm font-semibold transition">Sports</button>
+            <button class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-full text-sm font-semibold transition">Business</button>
+            <button class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-full text-sm font-semibold transition">Education</button>
+            <button class="bg-gray-700 hover:bg-gray-600 px-4 py-2 rounded-full text-sm font-semibold transition">Health</button>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="mb-8">
+            <div class="relative">
+                <input type="text" placeholder="Search news..." class="w-full bg-gray-800 border border-gray-700 rounded-lg py-3 px-4 pl-10 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                <i class="fas fa-search absolute left-3 top-3.5 text-gray-500"></i>
+            </div>
+        </div>
+
+        <!-- Featured News -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold mb-6">Featured Stories</h2>
+            <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg">
+                <div class="md:flex">
+                    <div class="md:w-2/3 h-64 md:h-auto bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-image text-5xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6 md:w-1/3">
+                        <span class="text-sm text-blue-400">Local Events</span>
+                        <h3 class="text-2xl font-bold mt-2 mb-4">Annual Town Festival Draws Record Crowd</h3>
+                        <p class="text-gray-400 mb-4">This year's festival saw over 10,000 attendees, making it the most successful event in the town's history. The three-day celebration featured...</p>
+                        <div class="flex items-center text-sm">
+                            <div class="w-8 h-8 bg-gray-600 rounded-full mr-2"></div>
+                            <div>
+                                <p class="font-semibold">Sarah Johnson</p>
+                                <p class="text-gray-500">June 18, 2023 • 5 min read</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- News Grid -->
+        <section>
+            <h2 class="text-2xl font-bold mb-6">Latest Updates</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- News Card 1 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-newspaper text-4xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-400">Education</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-2">New School Program Launches</h3>
+                        <p class="text-gray-400 mb-4">The district announced a new STEM initiative that will provide cutting-edge technology to all middle school students...</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">June 17, 2023</span>
+                            <a href="article.html" class="text-blue-400 hover:text-blue-300">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 2 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-newspaper text-4xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-400">Health</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Hospital Expansion Complete</h3>
+                        <p class="text-gray-400 mb-4">The $20 million expansion project adds a new pediatric wing and doubles the emergency department capacity...</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">June 16, 2023</span>
+                            <a href="article.html" class="text-blue-400 hover:text-blue-300">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 3 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-newspaper text-4xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-400">Sports</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Little League Championship</h3>
+                        <p class="text-gray-400 mb-4">The local team advances to state finals after a dramatic extra-innings victory in the regional tournament...</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">June 15, 2023</span>
+                            <a href="article.html" class="text-blue-400 hover:text-blue-300">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 4 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-newspaper text-4xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-400">Business</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Downtown Revitalization</h3>
+                        <p class="text-gray-400 mb-4">Five new businesses opened this month as part of the city's downtown revitalization initiative...</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">June 14, 2023</span>
+                            <a href="article.html" class="text-blue-400 hover:text-blue-300">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 5 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-newspaper text-4xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-400">Local Events</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Summer Concert Series</h3>
+                        <p class="text-gray-400 mb-4">The lineup for this year's free summer concert series in the park has been announced, featuring local and regional acts...</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">June 13, 2023</span>
+                            <a href="article.html" class="text-blue-400 hover:text-blue-300">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 6 -->
+                <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition">
+                    <div class="h-48 bg-gray-700 flex items-center justify-center">
+                        <i class="fas fa-newspaper text-4xl text-gray-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm text-blue-400">Education</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-2">Teacher of the Year</h3>
+                        <p class="text-gray-400 mb-4">Local high school science teacher recognized for innovative teaching methods and student mentorship...</p>
+                        <div class="flex justify-between items-center text-sm">
+                            <span class="text-gray-500">June 12, 2023</span>
+                            <a href="article.html" class="text-blue-400 hover:text-blue-300">Read More →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-8 flex justify-center">
+                <nav class="flex items-center space-x-2">
+                    <button class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="w-10 h-10 flex items-center justify-center bg-blue-600 text-white rounded-full">1</button>
+                    <button class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition">2</button>
+                    <button class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition">3</button>
+                    <span class="px-2">...</span>
+                    <button class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition">8</button>
+                    <button class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-full hover:bg-gray-700 transition">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-8 px-6 mt-12">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-broadcast-tower text-white"></i>
+                        </div>
+                        <span class="text-xl font-bold">Community Radio</span>
+                    </div>
+                    <p class="text-gray-400 mt-2">98.5 FM • Serving the community since 1985</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-blue-400 transition">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 Community Radio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Player -->
+    <div class="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 p-3 shadow-lg">
+        <div class="container mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <button class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                    <i class="fas fa-play"></i>
+                </button>
+                <div>
+                    <h4 class="font-semibold">Community Radio 98.5 FM</h4>
+                    <p class="text-sm text-gray-400">Now Playing: Local Hits</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="w-48 hidden md:block">
+                    <input type="range" min="0" max="100" value="70" class="w-full">
+                </div>
+                <div class="text-gray-400">
+                    <span class="text-sm">12:45</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/radio-player.js"></script>
+</body>
+</html>
